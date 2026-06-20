@@ -39,11 +39,20 @@ def create_shop_list(level):
 
 
 def show_shop(shop_list):
-    # TODO:
+    print("\n===== Shop =====")
+
+    for i in range(len(shop_list)):
+        item_name = shop_list[i]
+        item = shop_items[item_name]
+
+        print(i + 1, ".",item_name)
+        print("  Price:",item["price"])
+        print("   Type:",item["type"])
+        print("   Effect:",item["effect"])
     # Print the shop title
     # Use a loop to show each item
     # Print price, type and effect
-    # Print "0. Leave shop"
+    print("0. Leave shop")
 
     pass
 
